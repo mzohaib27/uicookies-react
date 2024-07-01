@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.flexStart{
+  @apply flex justify-start items-center
+}
+
+.flexCenter{
+  @apply flex justify-center items-center
+}
+
+.flexEnd{
+  @apply flex justify-end items-center
+}
+
+.flexBetween{
+  @apply flex justify-between items-center
+}
+
+.hover-effect{
+  @apply transition-all duration-500 
+}
+
+.btn-hover{
+  @apply transition-all duration-500 cursor-pointer -translate-y-1
+}
+
+.hero-bg{
+  @apply bg-slate-800 text-white
+}
+
+
+
