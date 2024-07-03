@@ -6,7 +6,7 @@ import { truncate } from "lodash";
 const Card = ({ image, title, description, price, id, category }) => {
   return (
     <>
-      <div className="flex flex-col gap-2 rounded-lg bg-gray-700">
+      <div className="flex flex-col gap-2 rounded-lg bg-gray-300 ">
         <div>
           <img
             src={image}
@@ -19,7 +19,7 @@ const Card = ({ image, title, description, price, id, category }) => {
           <p className="py-2 ">{truncate(description, { length: 150 })}</p>
         </div>
         <div className="flexBetween p-4 border-t border-gr">
-          <p className="p-2 bg-gray-500 rounded-lg">{price}</p>
+          <p className="p-2 bg-gray-200  rounded-lg">{price.priceRange}</p>
           <Link to={`/downloads/${id}`}>
             <button>View Details</button>
           </Link>

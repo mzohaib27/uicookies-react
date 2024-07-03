@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import { cardsData } from "../constants/data";
 
 import { Link, useParams } from "react-router-dom";
+import Button from "./Button";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../Redux/cartSlice";
 
 const CardDetails = () => {
+  const dispatch = useDispatch();
+
   const [selectCheckBox, setSelectCheckBox] = useState("free");
 
   const handleCheckBox = (e) => {
@@ -12,7 +17,10 @@ const CardDetails = () => {
 
   const { id } = useParams();
   const item = cardsData?.find((d) => d.id === parseInt(id));
-  console.log(item);
+
+  const downloadBtnFunction = () => {
+    dispatch(addToCart());
+  };
   return (
     <>
       <div className="flex flex-col w-full ">
@@ -29,7 +37,7 @@ const CardDetails = () => {
             <p className="p-4">{item.description}</p>
           </div>
           <div className="w-full lg:w-1/4 p-6 h-[30rem] rounded m-2 border border-gray-300">
-            <p className="text-4xl ">{item.price}</p>
+            <p className="text-4xl ">{item.price.priceRange}</p>
             <div className="flex flex-col gap-2 py-4">
               <label>
                 <input
@@ -39,7 +47,10 @@ const CardDetails = () => {
                   onChange={handleCheckBox}
                   className="form-radio text-blue-600 mx-2"
                 />
-                <span>Remove footer credits for single template – $15.00</span>
+                <span>
+                  Remove footer credits for single template –{" "}
+                  {item.price.price2}
+                </span>
               </label>
               <label>
                 <input
@@ -49,7 +60,9 @@ const CardDetails = () => {
                   onChange={handleCheckBox}
                   className="form-radio text-blue-600  mx-2"
                 />
-                <span>Remove footer credits from all templates – $59.00</span>
+                <span>
+                  Remove footer credits from all templates – {item.price.price3}
+                </span>
               </label>
               <label>
                 <input
@@ -59,19 +72,29 @@ const CardDetails = () => {
                   onChange={handleCheckBox}
                   className="form-radio text-blue-600  mx-2"
                 />
-                <span>Free - Must leave footer credits in place – $0.00</span>
+                <span>
+                  Free - Must leave footer credits in place –{" "}
+                  {item.price.price1}
+                </span>
               </label>
             </div>
             <div className="pb-2 border-b border-gray-50 flex flex-col gap-4 ">
-              <Link to={"/"}>
-                <button className=" bg-blue-500 text-white font-bold rounded px-6 py-4 w-full">
-                  Download
-                </button>
+              <Link to={`/cart/${id}`}>
+                <Button
+                  styles={
+                    "bg-blue-500 text-white font-bold rounded px-6 py-4 w-full"
+                  }
+                  text={"Download"}
+                  onClickFunction={downloadBtnFunction}
+                />
               </Link>
               <Link to={"/"}>
-                <button className=" bg-gray-400 text-white font-bold rounded px-6 py-4 w-full">
-                  Demo
-                </button>
+                <Button
+                  styles={
+                    "bg-gray-400 text-white font-bold rounded px-6 py-4 w-full"
+                  }
+                  text={"Demo"}
+                />
               </Link>
             </div>
           </div>

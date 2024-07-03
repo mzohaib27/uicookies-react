@@ -49,10 +49,12 @@ const SearchResults = () => {
   console.log(filterCards);
   return (
     <>
-      <div className="text-white bg-gray-900">
-        <h1>Search Results</h1>
+      <div className="">
+        <h1 className="text-2xl md:text-5xl underline backdrop font-bold text-center py-4 italic">
+          Search Results
+        </h1>
       </div>
-      <div className="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 min-h-[80vh] px-4 md:px-12 py-4 md:py-6 bg-gray-900 ">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 min-h-[80vh] px-4 md:px-12 py-4 md:py-6 ">
         {filterCards?.map((card, i) => (
           <div key={i}>
             <Card key={i} {...card} />

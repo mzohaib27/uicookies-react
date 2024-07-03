@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div
-      className={`${styles.paddingX} flexBetween py-4 md:py-6 lg:py-8 hero-bg`}
+      className={`${styles.paddingX} flexBetween py-4 md:py-6 lg:py-8 hero-bg text-white`}
     >
       <div>
         <Link to={"/"}>

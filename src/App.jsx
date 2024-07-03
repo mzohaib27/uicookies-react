@@ -10,6 +10,7 @@ import Contact from "./Components/Contact";
 import CardDetails from "./Components/CardDetails";
 import SearchResults from "./Components/SearchResults";
 import BlogDetails from "./Components/BlogDetails";
+import Cart from "./Components/Cart";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/downloads/:id" element={<CardDetails />} />
         <Route path="/search-results" element={<SearchResults />} />
+        <Route path="/cart/:id" element={<Cart />} />
       </Routes>
       <Footer />
     </>

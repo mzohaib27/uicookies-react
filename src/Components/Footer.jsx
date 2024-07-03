@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Footer = () => {
   return (
-    <div className={`${styles.paddingX} ${styles.paddingY} hero-bg`}>
+    <div className={`${styles.paddingX} ${styles.paddingY} hero-bg text-white`}>
       <h1 className="text-4xl text-center py-8">
         Be First To Get Free HTML Templates Directly In your Inbox
       </h1>

@@ -1,0 +1,11 @@
+.child2{
+    display: flex;
+    flex-direction:column;
+    flex-shrink: auto;
+    height:fit-content;
+    background-color: rgb(229, 146, 146);
+}
+
+.backdrop{
+    backdrop-filter: brightness(90%)
+}
