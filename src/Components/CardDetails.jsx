@@ -4,7 +4,7 @@ import { cardsData } from "../constants/data";
 import { Link, useParams } from "react-router-dom";
 import Button from "./Button";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../Redux/cartslice";
+import { addToCart } from "../Redux/cartSlice";
 
 const CardDetails = () => {
   const dispatch = useDispatch();

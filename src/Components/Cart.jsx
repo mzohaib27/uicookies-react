@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Button from "./Button";
 import { styles } from "../utils/Styles";
-import { addToCart, removeFromCart } from "../Redux/cartslice";
+import { addToCart, removeFromCart } from "../Redux/cartSlice";
 import { cardsData, categories } from "../constants/data";
 import { Link, useParams } from "react-router-dom";
 import HeroSection from "./HeroSection";

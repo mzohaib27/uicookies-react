@@ -10,8 +10,8 @@ import {
   REGISTER,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import searchReducer from "./searchslice.js";
-import cartReducer from "./cartslice.js";
+import searchReducer from "./searchSlice.js";
+import cartReducer from "./cartSlice.js";
 
 const persistConfig = {
   key: "root",
