@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { setSearchTerm, setCategory } from "../Redux/SearchSlice";
+import { setSearchTerm, setCategory } from "../Redux/searchslice";
 import { categories } from "../constants/data";
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";

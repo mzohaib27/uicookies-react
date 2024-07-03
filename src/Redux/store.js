@@ -1,8 +1,8 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import searchReducer from "./SearchSlice.js";
-import cartReducer from "./cartSlice.js";
+import searchReducer from "./searchslice.js";
+import cartReducer from "./cartslice.js";
 
 const persistConfig = {
   key: "root",
