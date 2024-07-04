@@ -11,8 +11,8 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
-import CartReducer from "./cartSlice.js";
-import SearchReducer from "./searchSlice.js";
+import CartReducer from "./CartSlice.js";
+import SearchReducer from "./SearchSlice.js";
 const persistConfig = {
   key: "root",
   storage,
