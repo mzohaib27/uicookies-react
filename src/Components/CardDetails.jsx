@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { cardsData } from "../constants/data";
+import { cardsData } from "../constants/data.js";
 
 import { Link, useParams } from "react-router-dom";
-import Button from "./Button";
+import Button from "./Button.jsx";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../Redux/cartSlice";
+import { addToCart } from "../Redux/cartSlice.js";
 
 const CardDetails = () => {
   const dispatch = useDispatch();

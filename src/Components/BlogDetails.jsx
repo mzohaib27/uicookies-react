@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { AiOutlineLike, AiOutlineDislike, AiOutlineEye } from "react-icons/ai";
-import { styles } from "../utils/Styles";
+import { styles } from "../utils/Styles.js";
 
 const BlogDetails = () => {
   const { id } = useParams();

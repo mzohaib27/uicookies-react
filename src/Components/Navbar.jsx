@@ -1,5 +1,5 @@
 import React from "react";
-import { styles } from "../utils/Styles";
+import { styles } from "../utils/Styles.js";
 import logo from "../assets/applogo.png";
 import { FaSearch } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";

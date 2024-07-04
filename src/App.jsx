@@ -1,16 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { styles } from "./utils/Styles";
-import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
-import Home from "./Components/Home";
-import License from "./Components/License";
-import Blog from "./Components/Blog";
-import Contact from "./Components/Contact";
-import CardDetails from "./Components/CardDetails";
-import SearchResults from "./Components/SearchResults";
-import BlogDetails from "./Components/BlogDetails";
-import Cart from "./Components/Cart";
+import { styles } from "./utils/Styles.js";
+import Footer from "./Components/Footer.jsx";
+import Navbar from "./Components/Navbar.jsx";
+import Home from "./Components/Home.jsx";
+import License from "./Components/License.jsx";
+import Blog from "./Components/Blog.jsx";
+import Contact from "./Components/Contact.jsx";
+import CardDetails from "./Components/CardDetails.jsx";
+import SearchResults from "./Components/SearchResults.jsx";
+import BlogDetails from "./Components/BlogDetails.jsx";
+import Cart from "./Components/Cart.jsx";
 
 function App() {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
-import { styles } from "../utils/Styles";
-import HeroSection from "./HeroSection";
+import { styles } from "../utils/Styles.js";
+import HeroSection from "./HeroSection.jsx";
 import { Link } from "react-router-dom";
-import PricingPlans from "./PricingPlans";
+import PricingPlans from "./PricingPlans.jsx";
 import image from "../assets/paypal.jpg";
 import { PiDotFill } from "react-icons/pi";
 

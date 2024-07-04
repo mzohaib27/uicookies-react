@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { setSearchTerm, setCategory } from "../Redux/searchSlice";
-import { categories } from "../constants/data";
-import Button from "./Button";
+import { setSearchTerm, setCategory } from "../Redux/searchSlice.js";
+import { categories } from "../constants/data.js";
+import Button from "./Button.jsx";
 import { useNavigate } from "react-router-dom";
 
 const Search = () => {
