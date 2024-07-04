@@ -1,5 +1,5 @@
 import React from "react";
-import { pricingPlans } from "../constants/data";
+import { pricingPlans } from "../constants/data.js";
 
 const PricingPlans = () => {
   return (
