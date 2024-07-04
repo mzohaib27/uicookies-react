@@ -1,6 +1,6 @@
 import React from "react";
-import { styles } from "../utils/Styles";
-import Button from "./Button";
+import { styles } from "../utils/Styles.js";
+import Button from "./Button.jsx";
 
 const Footer = () => {
   return (
