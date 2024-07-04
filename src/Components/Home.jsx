@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { styles } from "../utils/Styles.js";
 import { Link } from "react-router-dom";
-import Button from "./Button";
+import Button from "./Button.jsx";
 import Card from "./Card.jsx";
 import Search from "./Search.jsx";
 import { categories, cardsData } from "../constants/data.js";
