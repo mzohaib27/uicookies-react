@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { styles } from "../utils/Styles";
+import { styles } from "../utils/Styles.js";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import Card from "./Card.jsx";
