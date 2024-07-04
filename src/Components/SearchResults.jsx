@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { cardsData, categories } from "../constants/data";
 import Card from "./Card";
 import { useLocation } from "react-router-dom";
-import { setCategory, setSearchTerm } from "../Redux/searchSlice";
+import { setCategory, setSearchTerm } from "../Redux/SearchSlice";
 
 const useQuery = () => {
   return new URLSearchParams(useLocation().search);
