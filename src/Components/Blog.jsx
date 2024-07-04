@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import HeroSection from "./HeroSection";
-import { styles } from "../utils/Styles";
+import HeroSection from "./HeroSection.jsx";
+import { styles } from "../utils/Styles.js";
 import axios from "axios";
 import { truncate } from "lodash";
 import { Link } from "react-router-dom";
