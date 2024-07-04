@@ -6,8 +6,6 @@ import { useLocation } from "react-router-dom";
 
 import { setCategory, setSearchTerm } from "../Redux/searchSlice.js";
 
-import { setCategory, setSearchTerm } from "../Redux/searchSlice.js";
-
 const useQuery = () => {
   return new URLSearchParams(useLocation().search);
 };

@@ -7,8 +7,6 @@ import { useDispatch } from "react-redux";
 
 import { addToCart } from "../Redux/cartSlice.js";
 
-import { addToCart } from "../Redux/cartSlice.js";
-
 const CardDetails = () => {
   const dispatch = useDispatch();
 

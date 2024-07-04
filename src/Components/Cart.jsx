@@ -4,9 +4,6 @@ import Button from "./Button.jsx";
 import { styles } from "../utils/Styles.js";
 
 import { addToCart, removeFromCart } from "../Redux/cartSlice.js";
-import { cardsData, categories } from "../constants/data";
-
-import { addToCart, removeFromCart } from "../Redux/cartSlice.js";
 import { cardsData, categories } from "../constants/data.js";
 
 import { Link, useParams } from "react-router-dom";

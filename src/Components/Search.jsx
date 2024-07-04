@@ -3,8 +3,6 @@ import { useDispatch } from "react-redux";
 
 import { setSearchTerm, setCategory } from "../Redux/searchSlice.js";
 
-import { setSearchTerm, setCategory } from "../Redux/searchSlice.js";
-
 import { categories } from "../constants/data.js";
 import Button from "./Button.jsx";
 import { useNavigate } from "react-router-dom";
