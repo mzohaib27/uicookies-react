@@ -2,8 +2,13 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Button from "./Button.jsx";
 import { styles } from "../utils/Styles.js";
+
 import { addToCart, removeFromCart } from "../Redux/cartSlice.js";
 import { cardsData, categories } from "../constants/data";
+
+import { addToCart, removeFromCart } from "../Redux/cartSlice.js";
+import { cardsData, categories } from "../constants/data.js";
+
 import { Link, useParams } from "react-router-dom";
 import HeroSection from "./HeroSection.jsx";
 import cardforCart from "../assets/cardforcart.jpg";
